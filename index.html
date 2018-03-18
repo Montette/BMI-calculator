@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator BMI</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="wrap">
+
+        <main>
+            <h1>Kalkulator BMI</h1>
+            <form id="myForm">
+                <div class="weight">
+                    <input type="text" name="weight" id="weight" value="" placeholder=" Waga (kg)" />
+                </div>
+                <div class="height">
+                    <input type="text" name="height" id="height" value="" placeholder=" Wzrost (cm)" />
+                </div>
+            </form>
+
+            <button class="first" id="but">Policz</button>
+            <div class="result" id="result"> </div>
+            <div class="descr" id="descr"></div>
+            <button class="reset" id="reset"> <i class="fa fa-refresh" aria-hidden="true"></i>
+Policz jeszcze raz </button>
+            <div class="info"> <i class="fa fa-info-circle" id="info" aria-hidden="true"></i> </div>
+
+
+            <!--            Modal window-->
+
+            <div class="modal" id="modal">
+                <p><strong>Wskaźnik BMI (body mass index, indeks masy ciała) </strong> to prosty wzór matematyczny, który w sposób pośredni opisuje zawartość tkanki tłuszczowej w organizmie na podstawie proporcji masy ciała mierzonej w kilogramach do wzrostu w metrach.</p>
+
+                <h2>Zakresy wartości BMI: </h2>
+                <ul>
+                    <li> mniej niż 16 - wygłodzenie</li>
+                    <li>16 - 16.99 - wychudzenie</li>
+                    <li>17 - 18.49 - niedowaga</li>
+                    <li>18.5 - 24.99 - wartość prawidłowa</li>
+                    <li>25 - 29.99 - nadwaga</li>
+                    <li>30 - 34.99 - I stopień otyłości</li>
+                    <li>35 - 39.99 - II stopień otyłości</li>
+                    <li>powyżej 40 - otyłość skrajna</li>
+                </ul>
+                <i class="fa fa-times" aria-hidden="true" id="x"></i>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

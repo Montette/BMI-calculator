@@ -1,0 +1,158 @@
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    }
+
+.wrap {
+    background-image: url(brooke-lark-230140.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+main {
+    height: 400px;
+    width: 500px;
+    box-sizing: border-box;
+    background-color: #fff0e5;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #2f2c2c;
+}
+
+form {
+    font-size: 25px;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    height: 20px;
+    border: 2px solid #ebebeb;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 20px auto;
+    display: block;
+}
+
+button {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    background: #f0776c;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-bottom: 2px solid #d76b60;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+button:hover {
+    background-color: #f0665c;
+}
+
+.reset {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.resetShow {
+    display: block;
+}
+
+
+.firstHide {
+    display: none;
+}
+
+.result {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #2f2c2c;
+}
+
+.descr {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+}
+
+.normal {
+    color: green;
+}
+
+.risk {
+    color: orange;
+}
+
+.highRisk {
+    color: red;
+}
+
+.info {
+    color: #4E4E4E;
+    font-size: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.info:hover {
+    color: #2C2B2B;
+}
+
+/* modal window */
+
+.modal {
+    height: 400px;
+    width: 500px;
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: justify;
+    display: none;
+    font-size: 15px;
+}
+
+.modalShow {
+    display: block;
+}
+
+.modal h2 {
+    font-size: inherit;
+}
+
+.fa-times {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 25px;
+    cursor: pointer;
+}
